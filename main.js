@@ -6,4 +6,10 @@ setTimeout(function(){
         infinite: true,
         arrow: true
     });
+    $(".aha-three-shelf").slick({
+        arrow: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+    });
 },500)

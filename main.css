@@ -3,6 +3,8 @@ body {
     font-family: 'Lato';
 }
 
+/*  HEADER  */
+
 .aha-header-info {
     display: flex;
     justify-content: space-around;
@@ -65,6 +67,8 @@ body {
     font-size: 14px;
 }
 
+/*  SECTION ONE  */
+
 .aha-banner img {
     width: 100%;
 }
@@ -103,11 +107,13 @@ button.slick-prev.slick-arrow {
 ul.slick-dots {
     bottom: 10px;
 }
+
 .slick-dots li button:before{
     opacity: 1;
     color: white;
     font-size: 7px;
 }
+
 .slick-dots li{
     margin: 0 -2px;
 }
@@ -142,50 +148,72 @@ ul.slick-dots {
     font-size: 13px;
 }
 
+/*  SECTION TWO  */
+
 .aha-two-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     overflow: hidden;
-    margin-top: 40px;
+    margin: 40px auto;
+    width: 70%;
 }
     
 .aha-grid-one {
-    grid-area: 1 / 2 / 2 / 3;;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
     align-items: center;
     padding: 10px;
 }
+
 .aha-grid-two {
-    grid-area: 2 / 2 / 3 / 3;;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
     align-items: center;
     padding: 10px;
 }
+
 .aha-grid-three {
-    grid-area: 1 / 3 / 2 / 4;;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
     align-items: center;
     padding: 10px;
 }
+
 .aha-grid-four {
-    grid-area: 2 / 3 / 3 / 4;;
+    grid-row-start: 2;
+    grid-column-start: 2; 
+    grid-row-end: 3;
+    grid-column-end: 3;
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
     align-items: center;
     padding: 10px;
 }
+
 .aha-grid-five {
-    grid-area: 1 / 4 / 3 / 5;;
+    grid-row-start: 1;
+    grid-column-start: 3; 
+    grid-row-end: 3;
+    grid-column-end: 4;
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
@@ -209,4 +237,153 @@ ul.slick-dots {
 .aha-two-grid span {
     text-transform: uppercase;
     font-size: 14px;
+}
+
+/*  SECTION THREE  */
+
+.aha-three-title h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.aha-three-shelf {
+    display: flex;
+}
+
+.aha-shelf-product {
+    position: relative;
+    margin: 10px;
+}
+
+.aha-product-flags {
+    display: flex;
+}
+
+.aha-flags-10off {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: black;
+    border-radius: 10px;
+    color: white;
+    font-size: 10px;
+    padding: 3px 8px;
+}
+
+.aha-flags-maisVendido {
+    background: black;
+    padding: 3px 8px;
+    border-radius: 17px;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+
+.aha-product-image {
+    position: relative;
+}
+
+.aha-flags-shippingFree {
+    background: gray;
+    padding: 3px 8px;
+    border-radius: 17px;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+}
+
+.aha-product-image img {
+    width: 100%;
+}
+
+.aha-product-name {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.aha-product-price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+span.aha-price-original {
+    color: gray;
+    font-size: 12px;
+}
+
+span.aha-price-offer {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span.aha-price-card {
+    font-size: 15px;
+}
+
+.aha-three-shelf.slick-initialized.slick-slider {
+    width: 72% !important;
+    margin: 0 auto;
+}
+
+.aha-three-shelf.slick-initialized.slick-slider button.slick-prev.slick-arrow {
+    left: -2%;
+}
+.aha-three-shelf.slick-initialized.slick-slider button.slick-next.slick-arrow {
+    right: -3%;
+}
+
+.aha-product-buyButton {
+    text-align: center;
+    display: flex;
+    background: black;
+    margin: 10px auto;
+    width: 60%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aha-shelf-product:hover .aha-product-buyButton{
+    opacity: 1;
+}
+
+.aha-product-buyButton span {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+}
+
+.aha-product-buyButton img {
+    max-width: 19px;
+    margin-right: 5px;
+}
+
+.aha-product-espiar {
+    position: absolute;
+    top: 50%;
+    transform: translateX(90px);
+    font-size: 12px;
+    background: gray;
+    padding: 2px 6px;
+    border-radius: 12px;
+    color: white;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.aha-shelf-product:hover .aha-product-espiar{
+    opacity: 1;
 }
