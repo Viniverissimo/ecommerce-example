@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: 'Lato';
+}
+
+.aha-header-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.aha-info-usersInfo {
+    display: flex;
+}
+
+.aha-info-search input[type="text"] {
+    border: none;
+    background: transparent;
+    font-size: 12px;
+}
+
+.aha-info-search button {
+    border: none;
+    background: transparent;
+    padding-right: 0;
+}
+
+.aha-info-usersInfo img {
+    max-width: 15px;
+    max-height: 15px;
+    margin-right: 4px;
+}
+
+.aha-info-usersInfo span {
+    font-size: 12px;
+}
+
+.aha-info-search {
+    background: #F8F8F8;
+    border-radius: 29px;
+    padding: 3px 10px;
+}
+
+.aha-usersInfo-myAccount {
+    margin-right: 30px;
+    display: flex;
+}
+
+.aha-usersInfo-contact {
+    margin-right: 30px;
+    display: flex;
+}
+
+.aha-header-links {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #f8f7f7;
+}
+
+.aha-header-links a {
+    text-decoration: none;
+    color: black;
+    margin: 5px 40px;
+    font-size: 14px;
+}
+
+.aha-banner img {
+    width: 100%;
+}
+
+button.slick-next.slick-arrow {
+    right: 20%;
+}
+
+.slick-next:before {
+    color: transparent;
+    background-image: url(./midia/arrow-right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+button.slick-prev.slick-arrow {
+    left: 15%;
+    z-index: 1;
+}
+
+.slick-prev:before {
+    color: transparent;
+    background-image: url(./midia/arrow-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.slick-prev.slick-disabled:before {
+    opacity: 1;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: -2px;
+}
+
+ul.slick-dots {
+    bottom: 10px;
+}
+.slick-dots li button:before{
+    opacity: 1;
+    color: white;
+    font-size: 7px;
+}
+.slick-dots li{
+    margin: 0 -2px;
+}
+
+.aha-first-regua {
+    display: flex;
+    background: #F8F8F8;
+    padding: 20px 10px;
+    justify-content: center;
+}
+
+.aha-regua-shipping {
+    display: flex;
+    margin-right: 15%;
+    align-items: center;
+}
+
+.aha-regua-shipping img {
+    margin-right: 7px;
+}
+
+.aha-regua-card img {
+    margin-right: 7px;
+}
+
+.aha-regua-card {
+    align-items: center;
+    display: flex;
+}
+
+.aha-first-regua span {
+    font-size: 13px;
+}
+
+.aha-two-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+    
+.aha-grid-one {
+    grid-area: 1 / 2 / 2 / 3;;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    align-items: center;
+    padding: 10px;
+}
+.aha-grid-two {
+    grid-area: 2 / 2 / 3 / 3;;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    align-items: center;
+    padding: 10px;
+}
+.aha-grid-three {
+    grid-area: 1 / 3 / 2 / 4;;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    align-items: center;
+    padding: 10px;
+}
+.aha-grid-four {
+    grid-area: 2 / 3 / 3 / 4;;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    align-items: center;
+    padding: 10px;
+}
+.aha-grid-five {
+    grid-area: 1 / 4 / 3 / 5;;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    align-items: center;
+    padding: 0 10px 10px;
+    justify-content: space-between;
+}
+
+.aha-grid-one:hover img, .aha-grid-two:hover img, .aha-grid-three:hover img, .aha-grid-four:hover img, .aha-grid-five:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.aha-two-grid img {
+    width: 200px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.aha-two-grid span {
+    text-transform: uppercase;
+    font-size: 14px;
+}
