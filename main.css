@@ -128,7 +128,7 @@ ul.slick-dots {
 }
 
 .aha-regua-shipping {
-    display: flex;
+    display: flex !important;
     margin-right: 15%;
     align-items: center;
 }
@@ -143,7 +143,7 @@ ul.slick-dots {
 
 .aha-regua-card {
     align-items: center;
-    display: flex;
+    display: flex !important;
 }
 
 .aha-first-regua span {
@@ -445,7 +445,7 @@ section.aha-section-four {
 }
 
 .aha-cards-client {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     margin: 10px;
@@ -606,4 +606,203 @@ section.aha-section-footer {
 
 .aha-midia-sociais a {
     margin-right: 3px;
+}
+
+.aha-btn-mobile{
+    display: none;
+}
+button.aha-mobile-close {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .aha-btn-mobile{
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+    .aha-btn-mobile img {
+        max-width: 15px;
+    }
+    .aha-header-links {
+        display: none;
+    }
+    .aha-header-links.active {
+        display: flex;
+        position: fixed;
+        width: 94%;
+        height: calc(100vh - 20px);
+        top: 0;
+        background: white;
+        flex-direction: column;
+        text-align: left;
+        padding-top: 40px;
+        z-index: 10;
+    }
+    button.aha-mobile-close {
+        display: flex;
+        border: none;
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        width: 10%;
+        background: transparent;
+    }
+
+    .aha-header-links a {
+        margin: 20px 10px;
+    }
+    
+    .aha-info-search {
+        position: absolute;
+        bottom: 5px;
+    }
+    
+    .aha-info-usersInfo span {
+        display: none;
+    }
+    
+    .aha-info-usersInfo {
+        flex-direction: column;
+    }
+
+    .aha-usersInfo-myAccount {
+        margin: 5px 0;
+    }
+    
+    .aha-usersInfo-contact {
+        margin: 5px 0;
+    }
+    
+    .aha-usersInfo-miniCart {
+        margin: 3px 0;
+    }
+
+    .aha-header-info {
+        padding-bottom: 30px;
+        position: relative;
+    }
+
+    button.slick-prev.slick-arrow {
+        left: 5px;
+    }
+    
+    button.slick-next.slick-arrow {
+        right: 5px;
+    }
+    
+    ul.slick-dots {
+        bottom: 0;
+    }
+
+    .aha-regua-card {
+        place-content: center;
+    }
+
+    .aha-two-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: 10px;
+        width: 95%;
+    }
+
+    .aha-regua-shipping {
+        place-content: center;
+    }
+    .aha-grid-one {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .aha-grid-two {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .aha-grid-three {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .aha-grid-four {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .aha-grid-five {
+        display: none;
+    }
+    .aha-two-grid img {
+        width: 100%;
+    }
+    
+    .aha-three-shelf.slick-initialized.slick-slider{
+        width: 87% !important;
+    }
+
+    .aha-three-shelf.slick-initialized.slick-slider button.slick-prev.slick-arrow {
+        left: 2% !important;
+    }
+
+    .aha-three-shelf.slick-initialized.slick-slider button.slick-next.slick-arrow {
+        right: 0% !important;
+    }
+
+    .aha-flags-maisVendido {
+        left: 60px;
+    }
+    
+    .aha-flags-shippingFree {
+        right: 70px;
+    }
+
+    .aha-flags-maisVendido.custom {
+        left: 37%;
+    }
+
+    .aha-flags-shippingFree.custom {
+        right: 40%;
+    }
+
+    .aha-product-espiar {
+        transform: translateX(130px);
+    }
+
+    .aha-four-banner {
+        flex-direction: column;
+    }
+    
+    section.aha-section-four {
+        width: 90%;
+    }
+    
+    .aha-four-banner h3 {
+        font-size: 50px;
+    }
+
+    .aha-depositions-cards.slick-initialized.slick-slider button.slick-prev.slick-arrow {
+        left: -20px;
+    }
+    
+    .aha-depositions-cards.slick-initialized.slick-slider button.slick-next.slick-arrow {
+        right: -26px;
+    }
+
+    .aha-six-newsletter h2 {
+        margin: 10px 10px 0px 10px;
+    }
+    
+    .aha-newsletter-input {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aha-newsletter-input input {
+        width: 90%;
+        margin: 5px auto;
+    }
+    
+    .aha-newsletter-input button {
+        width: 40%;
+        margin: 5px auto;
+    }
+
+    .aha-info {
+        flex-direction: column;
+    }
 }
