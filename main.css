@@ -428,7 +428,7 @@ section.aha-section-four {
     margin: 0 auto;
 }
 
-.aha-five-depositions {}
+/*  SECTION FIVE    */
 
 .aha-five-depositions h2 {
     text-transform: uppercase;
@@ -468,4 +468,51 @@ section.aha-section-four {
     color: gray;
     font-size: 12px;
     margin: 10px 0;
+}
+
+/*  SECTION SIX    */
+
+.aha-six-newsletter {
+    text-align: center;
+}
+
+.aha-six-newsletter h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: -4px;
+}
+
+.aha-six-newsletter span {
+    font-size: 14px;
+    color: gray;
+}
+
+.aha-newsletter-input {
+    margin-top: 20px;
+}
+
+.aha-newsletter-input input {
+    border: none;
+    background: #f8f8f8;
+    padding: 10px 5px;
+    border-radius: 20px;
+    width: 29%;
+    margin-right: 10px;
+}
+
+.aha-newsletter-input input::placeholder {
+   padding-left: 10px;
+   color: gray;
+   font-size: 12px;
+}
+
+.aha-newsletter-input button {
+    border: none;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 9px 24px;
+    border-radius: 20px;
+    font-size: 11px;
 }
