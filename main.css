@@ -589,6 +589,10 @@ section.aha-section-footer {
     margin-bottom: 2px;
 }
 
+.aha-info-contato span {
+    font-size: 14px;
+}
+
 .aha-info-ajuda a {
     text-decoration: none;
     color: black;
