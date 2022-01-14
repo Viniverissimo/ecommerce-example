@@ -398,6 +398,7 @@ span.aha-price-card {
 
 .aha-four-banner img {
     width: 100%;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .aha-four-banner img:hover {
@@ -493,12 +494,18 @@ section.aha-section-four {
 }
 
 .aha-newsletter-input input {
-    border: none;
+    border: 1px solid transparent;
     background: #f8f8f8;
     padding: 10px 5px;
     border-radius: 20px;
     width: 29%;
     margin-right: 10px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.aha-newsletter-input input:hover {
+    border: 1px solid black;
+    color: black;
 }
 
 .aha-newsletter-input input::placeholder {
@@ -515,4 +522,88 @@ section.aha-section-four {
     padding: 9px 24px;
     border-radius: 20px;
     font-size: 11px;
+}
+
+/*    FOOTER    */
+
+.aha-footer-info {
+    margin: 30px 30px 0;
+    padding-bottom: 10px;
+}
+
+.aha-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.aha-info-institucional {
+    display: flex;
+    flex-direction: column;
+}
+
+.aha-info-ajuda {
+    display: flex;
+    flex-direction: column;
+}
+
+.aha-info-págamento {
+    display: flex;
+    flex-direction: column;
+}
+
+.aha-info-midia {
+    display: flex;
+    flex-direction: column;
+}
+
+section.aha-section-footer {
+    background: #f8f8f8;
+}
+
+.aha-footer-logo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.aha-footer-logo img {
+    max-width: 70px;
+    align-self: center;
+}
+
+.aha-footer-logo span {
+    font-size: 12px;
+    color: gray;
+    font-weight: 100;
+}
+
+.aha-info p {
+    margin-bottom: 9px;
+}
+
+.aha-info-institucional a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.aha-info-ajuda a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.aha-contato-clock {
+    margin-bottom: 7px;
+}
+
+.aha-contato-whatsapp {
+    margin-bottom: 5px;
+}
+
+.aha-midia-sociais a {
+    margin-right: 3px;
 }
