@@ -427,3 +427,45 @@ section.aha-section-four {
     width: 70%;
     margin: 0 auto;
 }
+
+.aha-five-depositions {}
+
+.aha-five-depositions h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.aha-depositions-cards {
+    display: flex;
+    width: 71%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aha-cards-client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background: #F8F8F8;
+    border-radius: 10px;
+}
+
+.aha-cards-client span.aha-name-client {
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.aha-cards-client span.aha-client-deposition {
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.aha-cards-client span.aha-deposition-date {
+    color: gray;
+    font-size: 12px;
+    margin: 10px 0;
+}
