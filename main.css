@@ -60,6 +60,7 @@ body {
     text-align: center;
     padding: 10px;
     border: 1px solid #f8f7f7;
+    position: relative;
 }
 
 .aha-header-links a {
@@ -617,6 +618,66 @@ section.aha-section-footer {
 }
 button.aha-mobile-close {
     display: none;
+}
+
+.aha-header-links li {
+    list-style: none;
+}
+
+.aha-header-links ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.aha-menu-dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    z-index: 10;
+    top: 40px;
+    transform: translateY(0px) translateX(-95px);
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.6);
+}
+
+.aha-column {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    text-align: initial;
+    padding-top: 40px;
+}
+
+.aha-dropdown-image {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.aha-dropdown-image img {
+    width: 70%;
+}
+
+.aha-header-links li span {
+    font-weight: bold;
+    color: black;
+}
+
+.aha-dropdown-column ul li {
+    color: #b6b1b1;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.aha-header-links:hover .aha-menu-dropdown {
+    display: flex !important;
+}
+
+.aha-dropdown-column ul {
+    flex-direction: column;
 }
 
 @media (max-width: 767px) {
