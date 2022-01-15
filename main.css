@@ -870,4 +870,13 @@ button.aha-mobile-close {
     .aha-info {
         flex-direction: column;
     }
+    
+    .aha-header-links.active ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .aha-header-links.active ul li {
+        margin: 17px 0;
+    }
 }
