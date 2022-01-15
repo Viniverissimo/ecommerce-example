@@ -682,11 +682,23 @@ button.aha-mobile-close {
 
 .aha-usersInfo-miniCart {
     position: relative;
+    cursor: pointer;
 }
 
 .aha-minicart {
     display: none;
     position: absolute;
+}
+
+.aha-minicart.active{
+    display: flex;
+    width: 270px;
+    top: 30px;
+    right: 0px;
+    z-index: 10;
+    background-color: white;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.6);
 }
 
 .aha-minicart-product {
@@ -790,16 +802,6 @@ button.aha-finalizar {
     
     .aha-usersInfo-miniCart {
         margin: 3px 0;
-    }
-
-    .aha-minicart.active{
-        display: flex;
-        width: 270px;
-        top: 30px;
-        right: 0px;
-        z-index: 10;
-        background-color: white;
-        flex-direction: column
     }
 
     .aha-header-info {
