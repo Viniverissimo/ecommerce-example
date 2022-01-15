@@ -37,7 +37,13 @@
                 </div>
                 <div class="aha-usersInfo-miniCart">
                     <img src="./midia/minicart-icon.png" alt="">
-                    <span></span>
+                    <div class="aha-minicart">
+                        <div class="aha-products"></div>
+                        <div class="aha-buyCart">
+                            <span class="aha-subtotal"></span>
+                            <button class="aha-finalizar">Finalizar compra</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,7 +145,7 @@
             <h2>Promoções</h2>
         </div>
         <div class="aha-three-shelf">
-            <div class="aha-shelf-product">
+            <div class="aha-shelf-product" data-id="1">
                 <div class="aha-product-image">
                     <img src="./midia/product-image-1.png">
                     <div class="aha-product-espiar">
@@ -159,19 +165,19 @@
                     </div>
                 </div>
                 <div class="aha-product-name">
-                    <span>ANEL BANHADO OURO RETO COM ZIRCONIA</span>
+                    <span class="aha-name" data-title="Anel banhado a ouro">ANEL BANHADO OURO</span>
                 </div>
                 <div class="aha-product-price">
                     <span class="aha-price-original">De R$ 188,00</span>
-                    <span class="aha-price-offer">Por R$ 188,00</span>
+                    <span class="aha-price-offer" data-value="188">Por R$ 188,00</span>
                     <span class="aha-price-card">6x R$ 31,33 sem juros</span>
                 </div>
-                <div class="aha-product-buyButton">
+                <div class="aha-product-buyButton" data-id="1">
                     <img src="./midia/sacola-icon-white.png" alt="">
                     <span>Adicionar a sacola</span>
                 </div>
             </div>
-            <div class="aha-shelf-product">
+            <div class="aha-shelf-product" data-id="2">
                 <div class="aha-product-image">
                     <img src="./midia/product-image-2.png">
                     <div class="aha-product-espiar">
@@ -182,18 +188,18 @@
                     </div>
                 </div>
                 <div class="aha-product-name">
-                    <span>ANEL BANHADO OURO RETO COM ZIRCONIA</span>
+                    <span class="aha-name" data-title="Brinco banhado a ouro">BRINCO BANHADO A OURO</span>
                 </div>
                 <div class="aha-product-price">
-                    <span class="aha-price-offer" value="188">Por R$ 188,00</span>
+                    <span class="aha-price-offer" data-value="160">Por R$ 160,00</span>
                     <span class="aha-price-card">6x R$ 31,33 sem juros</span>
                 </div>
-                <div class="aha-product-buyButton">
+                <div class="aha-product-buyButton" data-id="2">
                     <img src="./midia/sacola-icon-white.png" alt="">
                     <span>Adicionar a sacola</span>
                 </div>
             </div>     
-            <div class="aha-shelf-product">
+            <div class="aha-shelf-product" data-id="3">
                 <div class="aha-product-image">
                     <img src="./midia/product-image-3.png">
                     <div class="aha-product-espiar">
@@ -207,18 +213,18 @@
                     </div>
                 </div>
                 <div class="aha-product-name">
-                    <span>ANEL BANHADO OURO RETO COM ZIRCONIA</span>
+                    <span class="aha-name" data-title="Brinco Swarovski">BRINCO SWAROVSKI</span>
                 </div>
                 <div class="aha-product-price">
-                    <span class="aha-price-offer">Por R$ 188,00</span>
+                    <span class="aha-price-offer" data-value="100">Por R$ 100,00</span>
                     <span class="aha-price-card">6x R$ 31,33 sem juros</span>
                 </div>
-                <div class="aha-product-buyButton">
+                <div class="aha-product-buyButton" data-id="3">
                     <img src="./midia/sacola-icon-white.png" alt="">
                     <span>Adicionar a sacola</span>
                 </div>
             </div>     
-            <div class="aha-shelf-product">
+            <div class="aha-shelf-product" data-id="4">
                 <div class="aha-product-image">
                     <img src="./midia/product-image-4.png">
                     <div class="aha-product-espiar">
@@ -235,19 +241,19 @@
                     </div>
                 </div>
                 <div class="aha-product-name">
-                    <span>ANEL BANHADO OURO RETO COM ZIRCONIA</span>
+                    <span class="aha-name" data-title="Corrente com Pingente">CORRENTE COM PINGENTE</span>
                 </div>
                 <div class="aha-product-price">
                     <span class="aha-price-original">De R$ 188,00</span>
-                    <span class="aha-price-offer">Por R$ 188,00</span>
+                    <span class="aha-price-offer" data-value="150">Por R$ 150,00</span>
                     <span class="aha-price-card">6x R$ 31,33 sem juros</span>
                 </div>
-                <div class="aha-product-buyButton">
+                <div class="aha-product-buyButton" data-id="4">
                     <img src="./midia/sacola-icon-white.png" alt="">
                     <span>Adicionar a sacola</span>
                 </div>
             </div>     
-            <div class="aha-shelf-product">
+            <div class="aha-shelf-product" data-id="5">
                 <div class="aha-product-image">
                     <img src="./midia/product-image-3.png">
                     <div class="aha-product-espiar">
@@ -267,14 +273,13 @@
                     </div>
                 </div>
                 <div class="aha-product-name">
-                    <span>ANEL BANHADO OURO RETO COM ZIRCONIA</span>
+                    <span class="aha-name" data-title="Brinco Diamantado">BRINCO DIAMANTADO</span>
                 </div>
                 <div class="aha-product-price">
-                    <span class="aha-price-original">De R$ 188,00</span>
-                    <span class="aha-price-offer">Por R$ 188,00</span>
+                    <span class="aha-price-offer" data-value="200">Por R$ 200,00</span>
                     <span class="aha-price-card">6x R$ 31,33 sem juros</span>
                 </div>
-                <div class="aha-product-buyButton">
+                <div class="aha-product-buyButton" data-id="5">
                     <img src="./midia/sacola-icon-white.png" alt="">
                     <span>Adicionar a sacola</span>
                 </div>

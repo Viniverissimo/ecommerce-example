@@ -680,6 +680,55 @@ button.aha-mobile-close {
     flex-direction: column;
 }
 
+.aha-usersInfo-miniCart {
+    position: relative;
+}
+
+.aha-minicart {
+    display: none;
+    position: absolute;
+}
+
+.aha-minicart-product {
+    display: flex;
+    width: 92%;
+    padding: 10px;
+    align-items: center;
+}
+
+.aha-products {
+    height: 190px;
+    overflow: auto;
+}
+
+.aha-minicart-imageProduct {
+    width: 32%;
+}
+
+.aha-minicart-imageProduct img {
+    max-height: 70px;
+    max-width: 70px;
+}
+
+.aha-minicart-nameProduct {
+    text-transform: uppercase;
+}
+
+.aha-buyCart {
+    text-align: center;
+    padding: 30px 30px 10px;
+    background: #f8f8f8;
+}
+
+button.aha-finalizar {
+    border: none;
+    background: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 @media (max-width: 767px) {
     .aha-btn-mobile{
         display: block;
@@ -743,6 +792,16 @@ button.aha-mobile-close {
         margin: 3px 0;
     }
 
+    .aha-minicart.active{
+        display: flex;
+        width: 270px;
+        top: 30px;
+        right: 0px;
+        z-index: 10;
+        background-color: white;
+        flex-direction: column
+    }
+
     .aha-header-info {
         padding-bottom: 30px;
         position: relative;
@@ -759,6 +818,10 @@ button.aha-mobile-close {
     ul.slick-dots {
         bottom: 0;
     }
+
+    .aha-minicart span {
+    display: flex;
+}
 
     .aha-regua-card {
         place-content: center;
