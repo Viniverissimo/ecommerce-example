@@ -706,6 +706,7 @@ button.aha-mobile-close {
     width: 92%;
     padding: 10px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .aha-products {
@@ -714,7 +715,7 @@ button.aha-mobile-close {
 }
 
 .aha-minicart-imageProduct {
-    width: 32%;
+    width: 30%;
 }
 
 .aha-minicart-imageProduct img {
